@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Major Marik | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e4e4e4;
+      line-height: 1.6;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #00ffc8;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: glow 2.5s ease-in-out infinite alternate;
+    }
+    header p {
+      font-style: italic;
+      color: #c4c4c4;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffc8, 0 0 20px #00ffc8;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffc8, 0 0 30px #1effe0;
+      }
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: rgba(18, 18, 18, 0.95);
+      padding: 10px 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #333;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffc8;
+    }
+    section {
+      margin-bottom: 50px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    ul li {
+      margin-bottom: 12px;
+    }
+    .project {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-left: 4px solid #00ffc8;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: transform 0.2s ease, background 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .highlight-box {
+      background: rgba(0, 255, 200, 0.1);
+      border-left: 4px solid #00ffc8;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 60px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+    .divider {
+      border-top: 2px dashed #00ffc8;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Major Marik</h1>
+    <p>Freelance Writer | UX Summary Specialist | Script Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">What I Offer</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Major, an up-and-coming freelancer carving out a lane in the niche corners of content and strategy. I specialize in writing UX research summaries, SEO-optimized content, and TikTok scripts tailored for e-commerce brands—clear, fast-paced, and scroll-stopping.</p>
+    <p>While I’m early in my freelance journey, I’ve been building my skills through deep practice, self-directed projects, and real-world simulations designed to mirror client work. Whether it’s editing podcast show notes for clarity and discoverability, or distilling dense research into something snappy and useful, I focus on making information usable—and marketing clickable.</p>
+    <p>I’m not here to fake expertise—I’m here to earn trust by delivering consistent, well-researched, and vibe-aware work. If you’re looking for someone who’s hungry, learning fast, and ready to plug into your vision, I’m your guy.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="services">
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>UX Research Summaries:</strong> Turn raw insights into clear, actionable docs for teams.</li>
+      <li><strong>SEO-Friendly Writing:</strong> Organic content that doesn’t sound robotic.</li>
+      <li><strong>TikTok Scripts for E-Commerce:</strong> Hook-problem-solution scripts with CTA focus.</li>
+      <li><strong>Podcast Show Notes:</strong> Tidy, timestamped, and searchable notes.</li>
+      <li><strong>Creative Concept Help:</strong> A second brain for bold ideas.</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects">
+    <h2>Project Samples</h2>
+
+    <div class="project">
+      <h3>🧠 UX, But Make It Digestible</h3>
+      <p><strong>UX Research Summary Sample – Mobile Wellness App</strong></p>
+      <div class="highlight-box"><strong>📍 Project Context:</strong> A mock UX research summary for a Gen Z-focused mobile wellness app called MindNest. Goal: help users build a daily meditation habit without guilt or burnout.</div>
+      <div class="highlight-box"><strong>🧵 Core User Insight:</strong> “I open the app to chill... but I instantly get decision fatigue. Too many tabs, too much going on.”</div>
+      <div class="highlight-box"><strong>🔥 Key Pain Points:</strong> Overwhelming onboarding, mood tracker confusion, and no feedback loop post-session.</div>
+      <div class="highlight-box"><strong>🌱 Emotional Triggers:</strong> Guilt-driven avoidance, imposter syndrome, and chill-expectation mismatch.</div>
+      <div class="highlight-box"><strong>🛠 Recommendations:</strong> Soft entry onboarding, emoji-based vibe logging, positive post-session affirmations.</div>
+      <p><em>Format: One-pager, scrollable PDF | Audience: Dev team + product designer | Tone: Friendly & Insightful</em></p>
+    </div>
+
+    <div class="project">
+      <h3>📦 Hooks That Sell: TikTok Scripts for E-Com</h3>
+      <p><strong>TikTok Ad Script Sample – Skincare Brand</strong></p>
+      <div class="highlight-box"><strong>🎯 Target:</strong> Acne-prone 18–28 year olds addicted to TikTok skincare.</div>
+      <div class="highlight-box"><strong>🎥 Script – “Filter Breakup”</strong><br>
+        <strong>Hook:</strong> POV: You realize you don’t need the Paris filter anymore.<br>
+        <strong>Problem:</strong> "I used to cover every video in filters because my acne was LOUD."<br>
+        <strong>Solution:</strong> 3 weeks with GlowMelt’s Enzyme Jelly Cleanser cleared it up.<br>
+        <strong>CTA:</strong> "Duet this when your skin finally clears up."
+      </div>
+      <p><em>Strategy: Native voice + viral format + CTA focused. Built for engagement & stitchability.</em></p>
+    </div>
+
+    <div class="project">
+      <h3>🎧 From Ramble to Readable</h3>
+      <p><strong>Podcast Show Notes Sample – Self-Improvement Episode</strong></p>
+      <div class="highlight-box"><strong>🎙️ Episode:</strong> The Good Yapper – Ep. 01: "You Don’t Need a Morning Routine to Win"</div>
+      <div class="highlight-box"><strong>🕒 Timestamps:</strong><br>
+        00:00 – Intro & chaotic mornings<br>
+        03:42 – The "5AM Club" myth<br>
+        07:15 – Real routines vs highlight reels<br>
+        11:50 – Energy > structure<br>
+        14:30 – Journal prompt drop</div>
+      <div class="highlight-box"><strong>🔑 Takeaways:</strong> Rhythm over ritual. Consistency is quiet. Sleep > hustle porn.</div>
+      <div class="highlight-box"><strong>🔍 SEO Description:</strong> Debunking the 5AM myth. A better way to build habits—your way.</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:MajorMarik@outlook.com">MajorMarik@outlook.com</a></p>
+      <p><strong>Phone:</strong> 816.335.7598</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/major-m-468299309">linkedin.com/in/major-m-468299309</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Major Marik | Designed by Major with love & code</p>
+  </footer>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Major Marik | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 60px; /* nav height offset for smooth scroll */
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e4e4e4;
+      line-height: 1.6;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3 {
+      color: #00ffc8;
+      text-shadow: 0 0 6px #00ffc8aa;
+      font-weight: 700;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 3.4rem;
+      margin-bottom: 8px;
+      animation: glow 2.5s ease-in-out infinite alternate;
+      letter-spacing: 1.2px;
+    }
+    header p {
+      font-style: italic;
+      color: #b3b3b3;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffc8, 0 0 25px #00ffc8;
+      }
+      to {
+        text-shadow: 0 0 25px #00ffc8, 0 0 35px #1effe0;
+      }
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(18, 18, 18, 0.98);
+      padding: 14px 0;
+      z-index: 9999;
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #222;
+      text-align: center;
+      margin-bottom: 50px;
+      box-shadow: 0 2px 10px rgba(0,255,200,0.1);
+    }
+    nav a {
+      color: #e4e4e4;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      transition: color 0.25s ease, transform 0.15s ease;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      color: #00ffc8;
+      transform: scale(1.1);
+      outline: none;
+    }
+    section {
+      margin-bottom: 60px;
+      padding: 25px 30px;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease forwards;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 10px 40px rgba(0, 255, 200, 0.4);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    ul li {
+      margin-bottom: 14px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    .project {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 22px 28px;
+      border-left: 5px solid #00ffc8;
+      border-radius: 12px;
+      margin-top: 24px;
+      transition: transform 0.25s ease, background 0.35s ease;
+      cursor: default;
+    }
+    .project:hover {
+      transform: translateY(-6px);
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 12px 35px #00ffc8aa;
+    }
+    .project h3 {
+      margin-bottom: 14px;
+      font-size: 1.7rem;
+      letter-spacing: 0.02em;
+      user-select: none;
+    }
+    .highlight-box {
+      background: rgba(0, 255, 200, 0.12);
+      border-left: 5px solid #00ffc8;
+      padding: 14px 18px;
+      margin: 14px 0;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #c4fff9;
+      line-height: 1.3;
+      user-select: text;
+    }
+    .highlight-box strong {
+      color: #00ffc8;
+    }
+    .contact-info p {
+      margin: 12px 0;
+      font-size: 1.1rem;
+    }
+    .contact-info a {
+      color: #00ffc8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: text-decoration 0.25s ease;
+    }
+    .contact-info a:hover,
+    .contact-info a:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #7a7a7a;
+      margin-top: 80px;
+      border-top: 1px solid #222;
+      padding-top: 22px;
+      user-select: none;
+    }
+    .divider {
+      border-top: 2px dashed #00ffc8;
+      margin: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Major Marik</h1>
+    <p>Freelance Writer | UX Summary Specialist | Script Creator Extraordinaire</p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <a href="#about" tabindex="0">About</a>
+    <a href="#services" tabindex="0">What I Offer</a>
+    <a href="#projects" tabindex="0">Projects</a>
+    <a href="#contact" tabindex="0">Contact</a>
+  </nav>
+
+  <section id="about" tabindex="0" aria-label="About Me">
+    <h2>About Me</h2>
+    <p>Hey, I’m Major — your go-to guy for transforming dense, boring info into snackable, scroll-stopping content. Whether it’s UX research summaries that actually make sense, SEO-friendly copy that doesn’t sound like a robot’s diary, or TikTok scripts built to catch eyeballs and clicks, I’m here to level up your content game.</p>
+    <p>No fluff, no frontin’. Just solid skills, mad hunger to learn, and a vibe that keeps your projects fresh and on point.</p>
+    <p>If you want a versatile freelancer who’s dialed into trends but serious about results — let’s link up.</p>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="services" tabindex="0" aria-label="Services I Offer">
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>UX Research Summaries:</strong> Turning raw user data into crystal-clear, actionable insights.</li>
+      <li><strong>SEO-Friendly Writing:</strong> Content that reads naturally and ranks organically.</li>
+      <li><strong>TikTok Scripts for E-Commerce:</strong> Hook, problem, solution, CTA — designed to convert.</li>
+      <li><strong>Podcast Show Notes:</strong> Timestamped, searchable, and tidy notes that boost discovery.</li>
+      <li><strong>Creative Concept Help:</strong> Your extra brain for wild, fresh ideas.</li>
+    </ul>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="projects" tabindex="0" aria-label="Project Samples">
+    <h2>Project Samples</h2>
+
+    <article class="project" aria-labelledby="project1-title" tabindex="0">
+      <h3 id="project1-title">🧠 UX, But Make It Digestible</h3>
+      <p><strong>UX Research Summary Sample – Mobile Wellness App</strong></p>
+      <div class="highlight-box"><strong>📍 Project Context:</strong> A mock UX research summary for a Gen Z-focused mobile wellness app called MindNest. Goal: help users build a daily meditation habit without guilt or burnout.</div>
+      <div class="highlight-box"><strong>🧵 Core User Insight:</strong> “I open the app to chill... but I instantly get decision fatigue. Too many tabs, too much going on.”</div>
+      <div class="highlight-box"><strong>🔥 Key Pain Points:</strong> Overwhelming onboarding, mood tracker confusion, and no feedback loop post-session.</div>
+      <div class="highlight-box"><strong>🌱 Emotional Triggers:</strong> Guilt-driven avoidance, imposter syndrome, and chill-expectation mismatch.</div>
+      <div class="highlight-box"><strong>🛠 Recommendations:</strong> Soft entry onboarding, emoji-based vibe logging, positive post-session affirmations.</div>
+      <p><em>Format: One-pager, scrollable PDF | Audience: Dev team + product designer | Tone: Friendly & Insightful</em></p>
+    </article>
+
+    <article class="project" aria-labelledby="project2-title" tabindex="0">
+      <h3 id="project2-title">📦 Hooks That Sell: TikTok Scripts for E-Com</h3>
+      <p><strong>TikTok Ad Script Sample – Skincare Brand</strong></p>
+      <div class="highlight-box"><strong>🎯 Target:</strong> Acne-prone 18–28 year olds addicted to TikTok skincare.</div>
+      <div class="highlight-box"><strong>🎥 Script – “Filter Breakup”</strong><br />
+        <strong>Hook:</strong> POV: You realize you don’t need the Paris filter anymore.<br />
+        <strong>Problem:</strong> "I used to cover every video in filters because my acne was LOUD."<br />
+        <strong>Solution:</strong> 3 weeks with GlowMelt’s Enzyme Jelly Cleanser cleared it up.<br />
+        <strong>CTA:</strong> "Duet this when your skin finally clears up."
+      </div>
+      <p><em>Strategy: Native voice + viral format + CTA focused. Built for engagement & stitchability.</em></p>
+    </article>
+
+    <article class="project" aria-labelledby="project3-title" tabindex="0">
+      <h3 id="project3-title">🎧 From Ramble to Readable</h3>
+      <p><strong>Podcast Show Notes Sample – Self-Improvement Episode</strong></p>
+      <div class="highlight-box"><strong>🎙️ Episode:</strong> The Good Yapper – Ep. 01: "You Don’t Need a Morning Routine to Win"</div>
+      <div class="highlight-box"><strong>🕒 Timestamps:</strong><br />
+        00:00 – Intro & chaotic mornings<br />
+        03:42 – The "5AM Club" myth<br />
+        07:15 – Real routines vs highlight reels<br />
+        11:50 – Energy > structure<br />
+        14:30 – Journal prompt drop
+      </div>
+      <div class="highlight-box"><strong>🔑 Takeaways:</strong> Rhythm over ritual. Consistency is quiet. Sleep > hustle porn.</div>
+      <div class="highlight-box"><strong>🔍 SEO Description:</strong> Debunking the 5AM myth. A better way to build habits—your way.</div>
+    </article>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section id="contact" tabindex="0" aria-label="Contact Information">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:MajorMarik@outlook.com">MajorMarik@outlook.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+18163357598" aria-label="Call Major Marik">816.335.7598</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/major-m-468299309" target="_blank" rel="noopener noreferrer">linkedin.com/in/major-m-468299309</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Major Marik | Designed by Major with ❤️ & code</p>
+  </footer>
+</body>
+</html>
